@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,600;1,400&family=Sansita+Swashed:wght@500;600&family=Spline+Sans+Mono:ital,wght@0,300;0,400;0,600;1,300;1,500&family=Ubuntu+Condensed&family=Ubuntu:wght@300;400;500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+@layer base {
+  html {
+    font-family: "Expletus Sans", cursive;
+    font-family: "Sansita Swashed", cursive;
+    font-family: "Spline Sans Mono", monospace;
+    font-family: "Ubuntu", sans-serif;
+    font-family: "Ubuntu Condensed", sans-serif;
+  }
+}
