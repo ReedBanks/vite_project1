@@ -1,26 +1,18 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Flashsalespage from "./Flashsalespage";
-import Homepage from "./Homepage";
-import Homepage2 from "./Homepage2";
+import Dashboard from "./Dashboard";
+import NewEmployee from "./NewEmployee";
+import Update from "./Update";
+import EmpDelete from "./EmpDelete";
 
 export default function App() {
   return (
     <Routes>
-      <Route path="/" element={<Homepage />} />
-      <Route path="/signup" element={<Homepage2 />} />
-      <Route
-        path="/flash"
-        element={
-          <Flashsalespage
-            key="id"
-            item="item"
-            brand="brand"
-            price="price"
-            image="image"
-          />
-        }
-      />
+      <Route path="/" element={<Dashboard />} />
+      <Route path="/new" element={<NewEmployee />} />
+      <Route path="/del" element={<EmpDelete />} />
+      <Route path="/up" element={<Update />} />
+      
     </Routes>
   );
 }
