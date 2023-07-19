@@ -61,7 +61,7 @@ export default function EmpDelete() {
             .post(url,mainssnitValue)
             .then((response) => {    alert(response.data);   })
             .catch((error) => console.log(error));
-          alert("connection successful");
+          
         } 
         catch (error) {
           alert("Error connecting to database :", error);
